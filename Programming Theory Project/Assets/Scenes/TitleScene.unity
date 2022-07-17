@@ -1125,6 +1125,7 @@ GameObject:
   - component: {fileID: 2000876754}
   - component: {fileID: 2000876753}
   - component: {fileID: 2000876752}
+  - component: {fileID: 2000876755}
   m_Layer: 5
   m_Name: playerNameField
   m_TagString: Untagged
@@ -1290,6 +1291,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000876750}
   m_CullTransparentMesh: 1
+--- !u!114 &2000876755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000876750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38184a442b25aaf47a66f2aff8cb75c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayShow: 1
+  offsetTooltip: {x: 2, y: 2}
+  message: Up to 20 characters
+  tooltip: {fileID: 6877235411840635859, guid: fe98fa2a44e5a4940bddf7ad9538d907, type: 3}
 --- !u!1001 &7262004533454557767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1336,7 +1353,7 @@ PrefabInstance:
     - target: {fileID: 7262004533383231752, guid: f2b8d6ce6a862084397bf491e96f1781, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7262004533454557768}
+      objectReference: {fileID: 0}
     - target: {fileID: 7262004533383231752, guid: f2b8d6ce6a862084397bf491e96f1781, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClick
@@ -1437,16 +1454,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6686642096072750762, guid: f2b8d6ce6a862084397bf491e96f1781, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f2b8d6ce6a862084397bf491e96f1781, type: 3}
---- !u!114 &7262004533454557768 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -6686642096072750762, guid: f2b8d6ce6a862084397bf491e96f1781, type: 3}
+--- !u!1 &7262004533454557768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262004533383231754, guid: f2b8d6ce6a862084397bf491e96f1781, type: 3}
   m_PrefabInstance: {fileID: 7262004533454557767}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &7262004533454557769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262004533454557768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb575249f1cc7d479d04689b60fb69d, type: 3}
+  m_Script: {fileID: 11500000, guid: 38184a442b25aaf47a66f2aff8cb75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayShow: 1
+  offsetTooltip: {x: 2, y: 2}
+  message: Start game
+  tooltip: {fileID: 6877235411840635859, guid: fe98fa2a44e5a4940bddf7ad9538d907, type: 3}
